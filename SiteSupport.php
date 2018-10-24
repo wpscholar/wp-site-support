@@ -2,7 +2,7 @@
 
 use wpscholar\WordPress\FeatureSupport;
 
-if ( ! defined( 'site_supports' ) ) {
+if ( ! function_exists( 'site_supports' ) ) {
 
 	/**
 	 * Check if a site supports a specific feature.
@@ -20,7 +20,7 @@ if ( ! defined( 'site_supports' ) ) {
 
 }
 
-if ( ! defined( 'add_site_support' ) ) {
+if ( ! function_exists( 'add_site_support' ) ) {
 
 	/**
 	 * Add support for a specific feature to a site.
@@ -35,7 +35,7 @@ if ( ! defined( 'add_site_support' ) ) {
 
 }
 
-if ( ! defined( 'remove_site_support' ) ) {
+if ( ! function_exists( 'remove_site_support' ) ) {
 
 	/**
 	 * Remove support for a specific feature from a site.
@@ -50,7 +50,7 @@ if ( ! defined( 'remove_site_support' ) ) {
 
 }
 
-if ( ! defined( 'get_all_site_supports' ) ) {
+if ( ! function_exists( 'get_all_site_supports' ) ) {
 
 	/**
 	 * Get all features supported by a site.
@@ -67,7 +67,7 @@ if ( ! defined( 'get_all_site_supports' ) ) {
 
 }
 
-if ( ! defined( 'get_sites_by_support' ) ) {
+if ( ! function_exists( 'get_sites_by_support' ) ) {
 
 	/**
 	 * Get all sites that support a specific feature.
