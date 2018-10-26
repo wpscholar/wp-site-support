@@ -24,7 +24,7 @@ if ( ! function_exists( 'site_supports' ) ) {
 	/**
 	 * Check if a site supports a specific feature.
 	 *
-	 * @param string $site
+	 * @param int $site
 	 * @param string $feature
 	 *
 	 * @return bool
@@ -42,7 +42,7 @@ if ( ! function_exists( 'add_site_support' ) ) {
 	/**
 	 * Add support for a specific feature to a site.
 	 *
-	 * @param string $site
+	 * @param int $site
 	 * @param string|array $feature
 	 */
 	function add_site_support( $site, $feature ) {
@@ -57,7 +57,7 @@ if ( ! function_exists( 'remove_site_support' ) ) {
 	/**
 	 * Remove support for a specific feature from a site.
 	 *
-	 * @param string $site
+	 * @param int $site
 	 * @param string $feature
 	 */
 	function remove_site_support( $site, $feature ) {
@@ -72,7 +72,7 @@ if ( ! function_exists( 'get_all_site_supports' ) ) {
 	/**
 	 * Get all features supported by a site.
 	 *
-	 * @param string $site
+	 * @param int $site
 	 *
 	 * @return array
 	 */
