@@ -2,6 +2,23 @@
 
 use wpscholar\WordPress\FeatureSupport;
 
+if ( ! function_exists( 'current_site_supports' ) ) {
+
+	/**
+	 * Check if the current site supports a specific feature.
+	 *
+	 * @param string $feature
+	 *
+	 * @return bool
+	 */
+	function current_site_supports( $feature ) {
+		$support = FeatureSupport::getInstance( 'site' );
+
+		return $support->has( get_current_blog_id(), $feature );
+	}
+
+}
+
 if ( ! function_exists( 'site_supports' ) ) {
 
 	/**
